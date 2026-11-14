@@ -1,0 +1,20 @@
+MANOVISION - INSTALACION EN OTRA PC WINDOWS
+
+1. Extrae todo el ZIP en una carpeta. No ejecutes archivos dentro del ZIP.
+2. Instala Python 3.11 de 64 bits si no lo tienes.
+3. Abre README.md y sigue "Instalar desde Git o ZIP en otra PC Windows".
+   Alli estan los comandos para crear el entorno, instalar requirements.txt,
+   descargar el modelo y preparar PostgreSQL.
+4. Elige UNA opcion de PostgreSQL: portable, instalado o Docker.
+   Para portable, setup_local_db.py genera credenciales nuevas automaticamente.
+   Para PostgreSQL instalado o Docker, usa .env.example como plantilla.
+5. Al terminar la preparacion, abre iniciar.bat. Para los siguientes usos
+   solo necesitas iniciar.bat; no repitas la instalacion.
+6. Abre http://127.0.0.1:8000/ y permite el acceso a la camara.
+
+Necesitas Internet durante la instalacion. Este ZIP contiene el codigo,
+no una instalacion offline: no incluye Python, paquetes, PostgreSQL,
+el modelo ni datos o contrasenas del autor. Se preparan en la PC de destino.
+
+No borres la carpeta .local/pgdata despues de instalar: contiene tu historial.
+No compartas tu .env. Consulta docs/VALIDACION.md para pruebas y limitaciones.

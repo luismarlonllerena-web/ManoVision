@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+*.sqlite3
+models/*.task
+models/*.tmp
+.DS_Store
+.local/
+*.log
+.env.*
+!.env.example
+artifacts/
